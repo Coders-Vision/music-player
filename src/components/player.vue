@@ -16,7 +16,7 @@
             type="range"
             min="1"
             max="100"
-             v-on:click="adjustProgressSlider"
+             v-on:change="adjustProgressSlider"
             v-model="progressSlider"
             class="seekbar"
           />
@@ -59,7 +59,7 @@
               min="0"
               max="1"
               step="0.05"
-              v-on:click="adjustVolume"
+              v-on:change="adjustVolume"
               v-model="volumeSlider"
               class="vol-slider"
             />
